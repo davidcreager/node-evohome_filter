@@ -1,0 +1,12 @@
+{
+	"config": {
+		"inputMQTT": "mqtt://localhost",
+		"outputMQTR": "mqtt://CREAGERS-WHS",
+		"subscriptions": [
+			"evohome/evogateway/+/+/relay_demand/#",
+			"evohome/evogateway/+/+/heat_demand/#",
+			"evohome/evogateway/+/+/system_fault/#",
+			"evohome/evogateway/+/+/device_battery/#"
+		]
+	}
+}

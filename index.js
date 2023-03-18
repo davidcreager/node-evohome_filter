@@ -53,5 +53,5 @@ out_client.on('connect', function () {
 inp_client.on('message', function (topic, message) {
   // message is Buffer
   console.log(topic, message.toString())
-  out_client.publish(topic, message, (err) => {console.log("[evohome_filter] Error in publishing ", err, topic, message)} );
+  out_client.publish(topic, message, (err) => {if (err) console.log("[evohome_filter] Error in publishing ", err, topic, message)} );
 })
