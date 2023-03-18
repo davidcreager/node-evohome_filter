@@ -1,0 +1,15 @@
+{
+  "name": "node-evohome_filter",
+  "version": "1.0.0",
+  "description": "Filters evohom messages rec'd from mqtt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mqtt": "^4.3.7",
+    "nconf": "^0.12.0"
+  }
+}
