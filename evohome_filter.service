@@ -1,0 +1,22 @@
+[Unit]
+Description=filters evogateway  
+After=network.target mosquitto.service
+#StartLimitIntervalSec=0
+#StartLimitAction=reboot.
+
+[Service]
+Environment=PATH=/usr/bin:/usr/local/bin:/usr/sbin
+Environment=NODE_ENV=production
+Type=simple
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=evohome_filter
+User=david
+WorkingDirectory=/home/david/node-evohome_filter/
+ExecStart=/home/david/node-evohome_filter/index.js
+Restart=on-failure
+RestartSec=30
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

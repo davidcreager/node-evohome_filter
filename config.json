@@ -1,7 +1,8 @@
 {
 	"config": {
+		"debug": false,
 		"inputMQTT": "mqtt://localhost",
-		"outputMQTR": "mqtt://CREAGERS-WHS",
+		"outputMQTT": "mqtt://CREAGERS-WHS",
 		"subscriptions": [
 			"evohome/evogateway/+/+/relay_demand/#",
 			"evohome/evogateway/+/+/heat_demand/#",
